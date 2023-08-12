@@ -35,7 +35,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 streamlit.text(fruityvice_response.json())
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
-
+streamlit.dataframe(fruityvice_normalized)
 
 
 
