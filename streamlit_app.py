@@ -42,7 +42,7 @@ streamlit.dataframe(fruityvice_normalized)
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
 import request
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "apple")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "fruit_choice")
 import request
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
